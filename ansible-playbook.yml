@@ -1,5 +1,6 @@
 - name : Configure Docker on EC2 Instances
   hosts : all
+  become: true
   connection : ssh
   tasks : 
   - name: updating apt
