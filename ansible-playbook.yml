@@ -17,4 +17,4 @@
     become_user : root
 
   - name: Deploy Docker Container
-    command: docker stop $(docker ps -aq) && docker run -itd -p 8085:8080 shubhamkushwah123/insure-me:1.0
+    command: docker run -itd -p 8085:8080 shubhamkushwah123/insure-me:1.0
