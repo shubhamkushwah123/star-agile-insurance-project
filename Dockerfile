@@ -1,3 +1,4 @@
-FROM library/tomcat
-ADD target/insure-me-1.0.jar /usr/local/tomcat/webapps
-CMD "catalina.sh" "run"
+FROM openjdk:11
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
