@@ -102,8 +102,9 @@
               <input type="text" name="phone_number" class="form-control" id="inputNumber" placeholder="Mobile Number">
               <input type="email" name="email_address" class="form-control" id="inputMail" placeholder="Email">
               <input type="text" name="your_message" class="form-control" id="inputMessage" placeholder="Message">
+              <div id=response> </div>
               <div class="btn-box btn-center">
-                <button type="submit" class="submit_btn">
+                <button type="button" id="my-button" onclick='document.getElementById("response").innerHTML="Message Sent";'>
                   Send
                 </button>
               </div>
